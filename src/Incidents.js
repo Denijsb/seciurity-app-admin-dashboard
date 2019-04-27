@@ -34,6 +34,7 @@ class Incidents extends Component{
                             <th>client ID</th>
                             <th>latitude</th>
                             <th>longitude</th>
+                            <th>incident time</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -44,6 +45,7 @@ class Incidents extends Component{
                                     <td>{todo.client.id}</td>
                                     <td>{todo.latitude}</td>
                                     <td>{todo.longitude}</td>
+                                    <td>{todo.createTime}</td>
                                 </tr>
                             ))
                             :
