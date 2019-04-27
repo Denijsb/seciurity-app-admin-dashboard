@@ -25,12 +25,13 @@ class Incidents extends Component{
         return (
             <div>
                 <header>
-                    <h2>Clients table</h2>
+                    <h2>Incidents table</h2>
                     <Table>
                         <thead>
                         <tr>
                             <th>ID</th>
-                            <th>email</th>
+                            <th>unit ID</th>
+                            <th>client ID</th>
                             <th>latitude</th>
                             <th>longitude</th>
                         </tr>
@@ -39,7 +40,8 @@ class Incidents extends Component{
                         {todos.length ? todos.map(todo => (
                                 <tr key={todo.id}>
                                     <td>{todo.id}</td>
-                                    <td>{todo.email}</td>
+                                    <td>{todo.unit.id}</td>
+                                    <td>{todo.client.id}</td>
                                     <td>{todo.latitude}</td>
                                     <td>{todo.longitude}</td>
                                 </tr>

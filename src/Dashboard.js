@@ -24,10 +24,11 @@ class Dashboard extends Component {
         return (
             <div>
                 {this.renderRedirect()}
-                <Link to={Units}/>
-                <button onClick={this.setRedirect}>unit page</button>
-                <Link to={'./Clients'}/>
-                <button>Clients page</button>
+                <ul>
+                    <li><Link to={'./Units'}>units page</Link></li>
+                    <li><Link to={'./Clients'}>clients page</Link></li>
+                    <li><Link to={'./Incidents'}>incidents page</Link></li>
+                </ul>
             </div>
         )
     }
